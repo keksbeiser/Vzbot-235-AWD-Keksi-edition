@@ -2,7 +2,7 @@
     "connection": {
         "moonraker_url": "http://127.0.0.1",
         "moonraker_token": "",
-      "bot_token": "/home/pi/printer_data/bot_token"
+      "bot_token": "/home/pi/bot_token"
     },
     "permission": {
         "controllers": {
@@ -10,7 +10,7 @@
         }
     },
     "webcam": {
-        "url": "http://127.0.0.1/webcam/?action=snapshot"
+        "url": "http://127.0.0.1/webcam2/?action=snapshot"
     },
     "tmp_path": "/tmp/mooncord_fallback",
     "status": {
@@ -489,7 +489,7 @@
         }
     },
     "webcam": {
-        "url": "http://127.0.0.1/webcam/?action=snapshot",
+        "url": "http://127.0.0.1/webcam2/?action=snapshot",
         "quality": 80,
         "rotation": 0,
         "brightness": 0,
@@ -501,7 +501,7 @@
     },
     "notifications": {
         "blacklist": [],
-        "moonraker_throttle": true,
+        "moonraker_throttle": false,
         "timelapse": true,
         "m117_notification": {
             "enable": true,
@@ -1133,10 +1133,6 @@
         "startup":{
             "color": "#0099ff",
             "buttons": []
-        },
-        "throttle_under_voltage_detected": {
-            "color": "#c90000",
-            "thumbnail": "warning.png"
         },
         "throttle_temperature_limit_active": {
             "color": "#c90000",
