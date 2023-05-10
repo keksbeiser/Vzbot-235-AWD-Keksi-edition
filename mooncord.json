@@ -2,7 +2,7 @@
     "connection": {
         "moonraker_url": "http://127.0.0.1",
         "moonraker_token": "",
-      "bot_token": "/home/pi/bot_token"
+      "bot_token": ""
     },
     "permission": {
         "controllers": {
