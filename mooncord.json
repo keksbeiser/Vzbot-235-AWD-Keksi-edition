@@ -489,7 +489,7 @@
         }
     },
     "webcam": {
-        "url": "http://127.0.0.1/webcam2/?action=snapshot",
+        "url": "http://127.0.0.1/webcam/?action=snapshot",
         "quality": 80,
         "rotation": 0,
         "brightness": 0,

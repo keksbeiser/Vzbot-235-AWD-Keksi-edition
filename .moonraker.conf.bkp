@@ -15,6 +15,7 @@ cors_domains =
 	http://*.lan
 trusted_clients = 
 	10.0.0.0/8
+	127.0.0.1
 	127.0.0.0/8
 	169.254.0.0/16
 	172.16.0.0/12
@@ -75,6 +76,15 @@ origin = https://github.com/eliteschwein/mooncord.git
 install_script = scripts/install.sh
 enable_node_updates = True
 
+[update_manager KlipperScreen]
+type = git_repo
+path = ~/KlipperScreen
+origin = https://github.com/KlipperScreen/KlipperScreen.git
+virtualenv = ~/.KlipperScreen-env
+requirements = scripts/KlipperScreen-requirements.txt
+system_dependencies = scripts/system-dependencies.json
+managed_services = KlipperScreen
+
 [update_manager beacon]
 type = git_repo
 channel = dev
@@ -87,4 +97,13 @@ is_system_service = False
 managed_services = klipper
 info_tags = 
 	desc=Beacon Surface Scanner
+
+[update_manager Klippain-ShakeTune]
+type = git_repo
+path = ~/klippain_shaketune
+channel = beta
+origin = https://github.com/Frix-x/klippain-shaketune.git
+primary_branch = main
+managed_services = klipper
+install_script = install.sh
 
